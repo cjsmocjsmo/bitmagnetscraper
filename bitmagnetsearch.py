@@ -119,9 +119,10 @@ def report_result_count(param1, driver, type):
                 matched_titles.append(raw_text)
 
         matched_titles = list(dict.fromkeys(matched_titles))
-        torrent_count = len(rows) if rows else len(title_nodes)
         print(f"Title token matches for '{param1}': {len(matched_titles)}")
-
+        
+        torrent_count = len(rows) if rows else len(title_nodes)
+        
         if matched_titles:
             print(f"Found {len(matched_titles)} matching torrents\n\n")
         elif torrent_count > 0:
