@@ -61,7 +61,7 @@ movie_search_list = [
 
 total_tv = []
 total_mov = []
-matched_titles = []
+
 
 def init_driver():
     chrome_options = Options()
@@ -109,7 +109,8 @@ def report_result_count(param1, driver, type):
         soup = BeautifulSoup(rendered_html, 'html.parser')
         rows = soup.find_all('tr')
         title_nodes = soup.select("span.title")
-
+        matched_titles = []
+        
         for idx, node in enumerate(title_nodes, start=1):
             raw_text = node.get_text(" ", strip=True)
             if not raw_text:
@@ -117,7 +118,7 @@ def report_result_count(param1, driver, type):
                 continue
             if query_matches_title(param1, raw_text):
                 matched_titles.append(raw_text)
-
+        
         matched_titles = list(dict.fromkeys(matched_titles))
         print(f"Title token matches for '{param1}': {len(matched_titles)}")
         
