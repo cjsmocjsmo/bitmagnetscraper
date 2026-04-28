@@ -17,7 +17,7 @@ tv_search_list = [
     "fubar s03e01",
     "house of the dragon s03e01",
     "mandalorian s04e01",
-    "monarch legacy of monsters s02e09",
+    "monarch legacy of monsters s02e10",
     "obi-wan kenobi s02e01",
     "orville s04e01",
     "prehistoric planet s04e01",
