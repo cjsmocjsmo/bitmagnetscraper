@@ -152,13 +152,9 @@ def search_for_tv(driver):
         time.sleep(15)
 
 if __name__ == "__main__":
-
-    
-
     driver = init_driver()
 
     try:
-
         search_for_movs(driver)
         search_for_tv(driver)
 
