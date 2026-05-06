@@ -34,12 +34,12 @@ tv_search_list = [
     "ncis sydney s04e01",
     "ncis origins s03e01",
     "ncis tony and ziva s02e01",
-    "dmv s01e18",
+    "dmv s01e19",
     "percy jackson and the olympians s03e01",
     "starfleet academy s02e01",
     "wonderman s02e01",
     "dark winds s05e01",
-    "star wars maul shadow lord s01e07",
+    "star wars maul shadow lord s01e08",
     "star city s01e01",
     "spider-noir s01e01",
     "forged in fire s06",
@@ -47,7 +47,7 @@ tv_search_list = [
 
 movie_search_list = [
     "jumanji open world",
-    "the mandalorian and grogu",
+    "star wars: the mandalorian and grogu",
     "godzilla minus zero",
     "the dog stars",
     "avengers doomsday",
@@ -55,6 +55,10 @@ movie_search_list = [
     "top gun 3",
     "normal",
     "heart of the beast",
+    "supergirl",
+    "minions and monsters",
+    "the sheep detectives",
+    "spider-man: brand new day",
 ]
 
 total_tv = []
