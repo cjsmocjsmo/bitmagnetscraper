@@ -12,16 +12,16 @@ from urllib.parse import urlencode
 tv_search_list = [
     "ahsoka s02e01",
     "dark winds s05e01",
-    "dmv s01e19",
+    "dmv s01e20",
     "fallout s03e01",
-    "for all mankind s05e07",
+    "for all mankind s05e08",
     "foundation s04e01",
     "fubar s03e01",
     "house of the dragon s03e01",
     "ironheart s02e01",
     "mandalorian s04e01",
     "mobland s02e01",
-    "monarch legacy of monsters s02e10",
+    "monarch legacy of monsters s02e11",
     "ncis origins s03e01",
     "ncis s24e01",
     "ncis sydney s04e01",
@@ -35,7 +35,7 @@ tv_search_list = [
     "skeleton crew s02e01",
     "spider-noir s01e01",
     "star city s01e01",
-    "star wars maul shadow lord s01e08",
+    "star wars maul shadow lord s01e10",
     "star wars visions s04e01",
     "starfleet academy s02e01",
     "strange new worlds s04e01",
@@ -91,10 +91,10 @@ def report_result_count(param1, driver, type):
     try:
         driver.get(url)
         try:
-            WebDriverWait(driver, 30).until(
+            WebDriverWait(driver, 10).until(
                 lambda d: d.execute_script("return document.readyState") == "complete"
             )
-            WebDriverWait(driver, 30).until(
+            WebDriverWait(driver, 10).until(
                 lambda d: (
                     len(d.find_elements(By.CSS_SELECTOR, "span.title")) > 0
                     or len(d.find_elements(By.CSS_SELECTOR, "tr")) > 1
