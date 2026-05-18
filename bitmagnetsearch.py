@@ -55,8 +55,8 @@ movie_search_list = [
     "star wars: the mandalorian and grogu",
     "supergirl (2026)",
     "the dog stars",
-    "top gun 3",
-    "toy story 5",
+    "top gun 3 (2026)",
+    "toy story 5 (2026)",
 ]
 
 total_tv = []
