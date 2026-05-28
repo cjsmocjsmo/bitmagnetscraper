@@ -166,6 +166,7 @@ def report_result_count_requests(param1, type):
                 continue
             if query_matches_title(param1, raw_text):
                 matched_titles.append(raw_text)
+        print(matched_titles)
         matched_titles = list(dict.fromkeys(matched_titles))
         print(f"Title token matches for '{param1}': {len(matched_titles)}")
         torrent_count = len(rows) if rows else len(title_nodes)
