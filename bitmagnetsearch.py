@@ -164,6 +164,8 @@ def report_result_count_requests(param1, type):
             if not raw_text:
                 print(f"Debug: span.title #{idx} is empty")
                 continue
+            print(param1)
+            print(raw_text)
             if query_matches_title(param1, raw_text):
                 matched_titles.append(raw_text)
         print(matched_titles)
