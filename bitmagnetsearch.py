@@ -1,13 +1,22 @@
 
-from selenium import webdriver
-from selenium.webdriver.chrome.options import Options
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.common.by import By
-from selenium.common.exceptions import TimeoutException
-from bs4 import BeautifulSoup
+import platform
 import re
 import time
 from urllib.parse import urlencode
+from bs4 import BeautifulSoup
+try:
+    from selenium import webdriver
+    from selenium.webdriver.chrome.options import Options
+    from selenium.webdriver.support.ui import WebDriverWait
+    from selenium.webdriver.common.by import By
+    from selenium.common.exceptions import TimeoutException
+except ImportError:
+    webdriver = None
+    Options = None
+    WebDriverWait = None
+    By = None
+    TimeoutException = None
+import requests
 
 tv_search_list = [
     "ahsoka s02e01",
@@ -136,34 +145,84 @@ def report_result_count(param1, driver, type):
     except Exception as e:
         print(f"Error: {e}")
         return 0
+
+# ARMv7l scraping using requests and BeautifulSoup
+def report_result_count_requests(param1, type):
+    base_url = "http://10.0.4.58:3333/webui/torrents"
+    query = urlencode({"query": param1, "content_type": type, "limit": "100"})
+    url = f"{base_url}?{query}"
+    print(f"[requests] Searching for: {param1}")
+    try:
+        resp = requests.get(url, timeout=15)
+        resp.raise_for_status()
+        soup = BeautifulSoup(resp.text, 'html.parser')
+        rows = soup.find_all('tr')
+        title_nodes = soup.select("span.title")
+        matched_titles = []
+        for idx, node in enumerate(title_nodes, start=1):
+            raw_text = node.get_text(" ", strip=True)
+            if not raw_text:
+                print(f"Debug: span.title #{idx} is empty")
+                continue
+            if query_matches_title(param1, raw_text):
+                matched_titles.append(raw_text)
+        matched_titles = list(dict.fromkeys(matched_titles))
+        print(f"Title token matches for '{param1}': {len(matched_titles)}")
+        torrent_count = len(rows) if rows else len(title_nodes)
+        if matched_titles:
+            print(f"Found {len(matched_titles)} matching torrents\n\n")
+        elif torrent_count > 0:
+            print(f"Found {torrent_count} torrents, but no exact title matches\n\n")
+        else:
+            print("No torrents found\n\n")
+        return len(matched_titles)
+    except Exception as e:
+        print(f"Error: {e}")
+        return 0
         
-def search_for_movs(driver):
+
+def search_for_movs_selenium(driver):
     for search_term in movie_search_list:
         mov = report_result_count(search_term, driver, "movie")
         total_mov.append(mov)
-        # Rate limit: wait between requests
         time.sleep(15)
 
-def search_for_tv(driver):
+def search_for_tv_selenium(driver):
     for search_term in tv_search_list:
         eps = report_result_count(search_term, driver, "tvshow")
         total_tv.append(eps)
-        # Rate limit: wait between requests
         time.sleep(15)
 
+def search_for_movs_requests():
+    for search_term in movie_search_list:
+        mov = report_result_count_requests(search_term, "movie")
+        total_mov.append(mov)
+        time.sleep(5)
+
+def search_for_tv_requests():
+    for search_term in tv_search_list:
+        eps = report_result_count_requests(search_term, "tvshow")
+        total_tv.append(eps)
+        time.sleep(5)
+
 if __name__ == "__main__":
-    driver = init_driver()
-
-    try:
-        search_for_movs(driver)
-        search_for_tv(driver)
-
-    except Exception as e:
-        print(f"Error: {e}")
-
-    finally:
-        # Always close the driver
-        driver.quit()
-        
+    arch = platform.machine().lower()
+    sysplat = platform.system().lower()
+    plat = platform.platform().lower()
+    print(f"Detected architecture: {arch}, system: {sysplat}, platform: {plat}")
+    if arch == "armv7l":
+        print("Running in ARMv7l mode: using requests + BeautifulSoup")
+        search_for_movs_requests()
+        search_for_tv_requests()
+    else:
+        print("Running in standard mode: using Selenium")
+        driver = init_driver()
+        try:
+            search_for_movs_selenium(driver)
+            search_for_tv_selenium(driver)
+        except Exception as e:
+            print(f"Error: {e}")
+        finally:
+            driver.quit()
     print(f"Number of New Episodes: {sum(total_tv)}")
     print(f"Number of New Movies: {sum(total_mov)}")
