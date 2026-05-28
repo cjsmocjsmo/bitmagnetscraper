@@ -154,9 +154,11 @@ def report_result_count_requests(param1, type):
     print(f"[requests] Searching for: {param1}")
     try:
         resp = requests.get(url, timeout=15)
+        print(resp)
         resp.raise_for_status()
         soup = BeautifulSoup(resp.text, 'html.parser')
         rows = soup.find_all('tr')
+        print(rows)
         title_nodes = soup.select("span.title")
         matched_titles = []
         for idx, node in enumerate(title_nodes, start=1):
