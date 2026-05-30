@@ -42,7 +42,7 @@ tv_search_list = [
     "shogun s02e01",
     "silo s03e01",
     "skeleton crew s02e01",
-    "spider-noir s01e01",
+    "spider-noir s01e05",
     "star city s01e01",
     "star wars maul shadow lord s01e11",
     "star wars visions s04e01",
