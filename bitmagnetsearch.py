@@ -43,7 +43,7 @@ tv_search_list = [
     "silo s03e01",
     "skeleton crew s02e01",
     "spider-noir s01e05",
-    "star city s01e01",
+    "star city s01e03",
     "star wars maul shadow lord s01e11",
     "star wars visions s04e01",
     "starfleet academy s02e01",
@@ -66,6 +66,7 @@ movie_search_list = [
     "the dog stars",
     "top gun 3 (2026)",
     "toy story 5 (2026)",
+    "the sheep detectives (2026)"
 ]
 
 total_tv = []
