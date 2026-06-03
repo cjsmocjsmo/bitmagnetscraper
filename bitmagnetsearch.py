@@ -23,7 +23,7 @@ tv_search_list = [
     "dark winds s05e01",
     "dmv s01e21",
     "fallout s03e01",
-    "for all mankind s05e09",
+    "for all mankind s05e10",
     "foundation s04e01",
     "fubar s03e01",
     "house of the dragon s03e01",
@@ -101,10 +101,10 @@ def report_result_count(param1, driver, type):
     try:
         driver.get(url)
         try:
-            WebDriverWait(driver, 10).until(
+            WebDriverWait(driver, 5).until(
                 lambda d: d.execute_script("return document.readyState") == "complete"
             )
-            WebDriverWait(driver, 10).until(
+            WebDriverWait(driver, 5).until(
                 lambda d: (
                     len(d.find_elements(By.CSS_SELECTOR, "span.title")) > 0
                     or len(d.find_elements(By.CSS_SELECTOR, "tr")) > 1
