@@ -21,16 +21,15 @@ import requests
 tv_search_list = [
     "ahsoka s02e01",
     "dark winds s05e01",
-    "dmv s01e21",
     "fallout s03e01",
-    "for all mankind s05e10",
+    "for all mankind s06e01",
     "foundation s04e01",
     "fubar s03e01",
     "house of the dragon s03e01",
     "ironheart s02e01",
     "mandalorian s04e01",
     "mobland s02e01",
-    "monarch legacy of monsters s02e11",
+    "monarch legacy of monsters s03e01",
     "ncis origins s03e01",
     "ncis s24e01",
     "ncis sydney s04e01",
@@ -44,7 +43,7 @@ tv_search_list = [
     "skeleton crew s02e01",
     "spider-noir s02e01",
     "star city s01e04",
-    "star wars maul shadow lord s01e11",
+    "star wars maul shadow lord s02e01",
     "star wars visions s04e01",
     "starfleet academy s02e01",
     "strange new worlds s04e01",
@@ -66,7 +65,7 @@ movie_search_list = [
     "the dog stars",
     "top gun 3 (2026)",
     "toy story 5 (2026)",
-    "the sheep detectives (2026)"
+    "the sheep detectives (2026)",
     "hail marry (2026)"
 ]
 
@@ -102,10 +101,10 @@ def report_result_count(param1, driver, type):
     try:
         driver.get(url)
         try:
-            WebDriverWait(driver, 5).until(
+            WebDriverWait(driver, 2).until(
                 lambda d: d.execute_script("return document.readyState") == "complete"
             )
-            WebDriverWait(driver, 5).until(
+            WebDriverWait(driver, 2).until(
                 lambda d: (
                     len(d.find_elements(By.CSS_SELECTOR, "span.title")) > 0
                     or len(d.find_elements(By.CSS_SELECTOR, "tr")) > 1
