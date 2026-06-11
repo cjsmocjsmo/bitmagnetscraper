@@ -33,7 +33,6 @@ tv_search_list = [
     "ncis origins s03e01",
     "ncis s24e01",
     "ncis sydney s04e01",
-    "ncis tony and ziva s02e01",
     "obi-wan kenobi s02e01",
     "orville s04e01",
     "percy jackson and the olympians s03e01",
@@ -66,7 +65,7 @@ movie_search_list = [
     "top gun 3 (2026)",
     "toy story 5 (2026)",
     "the sheep detectives (2026)",
-    "project hail mary (2026)"
+    "project hail mary"
 ]
 
 total_tv = []
