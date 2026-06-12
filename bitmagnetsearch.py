@@ -65,7 +65,6 @@ movie_search_list = [
     "top gun 3 (2026)",
     "toy story 5 (2026)",
     "the sheep detectives (2026)",
-    "project hail mary"
 ]
 
 total_tv = []
