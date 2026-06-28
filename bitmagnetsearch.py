@@ -23,9 +23,10 @@ tv_search_list = [
     "dark winds s05e01",
     "fallout s03e01",
     "for all mankind s06e01",
+    "forged in fire s11e01"
     "foundation s04e01",
     "fubar s03e01",
-    "house of the dragon s03e01",
+    "house of the dragon s03e02",
     "ironheart s02e01",
     "mandalorian s04e01",
     "mobland s02e01",
