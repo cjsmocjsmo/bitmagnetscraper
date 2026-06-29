@@ -23,7 +23,7 @@ tv_search_list = [
     "dark winds s05e01",
     "fallout s03e01",
     "for all mankind s06e01",
-    "forged in fire s11e01"
+    "forged in fire s11e01",
     "foundation s04e01",
     "fubar s03e01",
     "house of the dragon s03e02",
@@ -66,6 +66,7 @@ movie_search_list = [
     "top gun 3 (2026)",
     "toy story 5 (2026)",
     "the sheep detectives (2026)",
+    "captain america brave new world (2026)",
 ]
 
 total_tv = []
