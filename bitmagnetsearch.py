@@ -58,14 +58,9 @@ movie_search_list = [
     "heart of the beast",
     "jumanji open world",
     "minions and monsters",
-    # "normal (2026)",
     "spider-man: brand new day",
-    # "star wars: the mandalorian and grogu",
-    # "supergirl (2026)",
     "the dog stars",
     "top gun 3 (2026)",
-    # "toy story 5 (2026)",
-    # "the sheep detectives (2026)",
     "captain america brave new world (2026)",
 ]
 
