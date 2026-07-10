@@ -62,6 +62,7 @@ movie_search_list = [
     "the dog stars",
     "top gun 3 (2026)",
     "captain america brave new world (2026)",
+    "young washington"
 ]
 
 total_tv = []
