@@ -26,7 +26,7 @@ tv_search_list = [
     "forged in fire s11e02",
     "foundation s04e01",
     "fubar s03e01",
-    "house of the dragon s03e03",
+    "house of the dragon s03e04",
     "ironheart s02e01",
     "mandalorian s04e01",
     "mobland s02e01",
