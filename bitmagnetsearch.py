@@ -62,7 +62,6 @@ movie_search_list = [
     "spider-man: brand new day",
     "the dog stars",
     "top gun 3 (2026)",
-    "captain america brave new world (2026)",
     "young washington",
 ]
 
