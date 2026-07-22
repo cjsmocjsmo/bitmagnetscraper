@@ -34,6 +34,7 @@ tv_search_list = [
     "ncis origins s03e01",
     "ncis s24e01",
     "ncis sydney s04e01",
+    "ncis new york s01e01",
     "obi-wan kenobi s02e01",
     "orville s04e01",
     "percy jackson and the olympians s03e01",
