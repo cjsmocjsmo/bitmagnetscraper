@@ -51,7 +51,7 @@ tv_search_list = [
     "the last of us s03e01",
     "wednesday s03e01",
     "wonderman s02e01",
-    "little house on the prairie (2026) s02e01"
+    "little house on the prairie (2026) s02e01",
 ]
 
 movie_search_list = [
@@ -64,6 +64,7 @@ movie_search_list = [
     "the dog stars",
     "top gun 3 (2026)",
     "young washington",
+    "the odyssey",
 ]
 
 total_tv = []
