@@ -26,7 +26,7 @@ tv_search_list = [
     "forged in fire s11e04",
     "foundation s04e01",
     "fubar s03e01",
-    "house of the dragon s03e05",
+    "house of the dragon s03e06",
     "ironheart s02e01",
     "mandalorian s04e01",
     "mobland s02e01",
@@ -65,7 +65,6 @@ movie_search_list = [
     "top gun 3 (2026)",
     "young washington",
     "the odyssey",
-    "masters of the universe",
 ]
 
 total_tv = []
