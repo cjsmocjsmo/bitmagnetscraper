@@ -18,12 +18,26 @@ except ImportError:
     TimeoutException = None
 import requests
 
+movie_search_list = [
+    "avengers doomsday",
+    "godzilla minus zero",
+    "heart of the beast",
+    "jumanji open world",
+    "minions and monsters",
+    "spider-man: brand new day",
+    "the dog stars",
+    "top gun 3 (2026)",
+    "young washington",
+    "the odyssey",
+    "matchbox"
+]
+
 tv_search_list = [
     "ahsoka s02e01",
     "dark winds s05e01",
     "fallout s03e01",
     "for all mankind s06e01",
-    "forged in fire s11e04",
+    "forged in fire s11e05",
     "foundation s04e01",
     "fubar s03e01",
     "house of the dragon s03e06",
@@ -40,37 +54,22 @@ tv_search_list = [
     "percy jackson and the olympians s03e01",
     "prehistoric planet s04e01",
     "shogun s02e01",
-    "silo s03e04",
+    "silo s03e05",
     "skeleton crew s02e01",
     "spider-noir s02e01",
     "star city s01e09",
     "star wars maul shadow lord s02e01",
     "star wars visions s04e01",
     "starfleet academy s02e01",
-    "strange new worlds s04e01",
+    "strange new worlds s04e02",
     "the last of us s03e01",
     "wednesday s03e01",
     "wonderman s02e01",
     "little house on the prairie (2026) s02e01",
 ]
 
-movie_search_list = [
-    "avengers doomsday",
-    "godzilla minus zero",
-    "heart of the beast",
-    "jumanji open world",
-    "minions and monsters",
-    "spider-man: brand new day",
-    "the dog stars",
-    "top gun 3 (2026)",
-    "young washington",
-    "the odyssey",
-    "matchbox"
-]
-
 total_tv = []
 total_mov = []
-
 
 def init_driver():
     chrome_options = Options()
