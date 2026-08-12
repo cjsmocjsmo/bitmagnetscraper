@@ -52,7 +52,7 @@ tv_search_list = [
     "percy jackson and the olympians s03e01",
     "prehistoric planet s04e01",
     "shogun s02e01",
-    "silo s03e06",
+    "silo s03e07",
     "skeleton crew s02e01",
     "spider-noir s02e01",
     "star city s01e09",
