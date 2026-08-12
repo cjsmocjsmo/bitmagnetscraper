@@ -59,7 +59,7 @@ tv_search_list = [
     "star wars maul shadow lord s02e01",
     "star wars visions s04e01",
     "starfleet academy s02e01",
-    "strange new worlds s04e03",
+    "strange new worlds s04e04",
     "the last of us s03e01",
     "wednesday s03e01",
     "wonderman s02e01",
