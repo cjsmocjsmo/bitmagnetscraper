@@ -25,8 +25,7 @@ movie_search_list = [
     "jumanji open world",
     "the dog stars",
     "top gun 3 (2026)",
-    "young washington",
-    "the odyssey",
+    "the odyssey (2026)",
     "matchbox",
     "coyote vs acme",
 ]
@@ -60,7 +59,7 @@ tv_search_list = [
     "star wars maul shadow lord s02e01",
     "star wars visions s04e01",
     "starfleet academy s02e01",
-    "strange new worlds s04e04",
+    "strange new worlds s04e05",
     "the last of us s03e01",
     "wednesday s03e01",
     "wonderman s02e01",
