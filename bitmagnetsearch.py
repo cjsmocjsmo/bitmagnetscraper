@@ -22,12 +22,11 @@ movie_search_list = [
     "avengers doomsday",
     "godzilla minus zero",
     "heart of the beast",
-    "jumanji open world",
-    "the dog stars",
+    "jumanji open world (2026)",
+    "the dog stars (2026)",
     "top gun 3 (2026)",
-    "the odyssey (2026)",
-    "matchbox",
-    "coyote vs acme",
+    "matchbox (2026)",
+    "coyote vs acme (2026)",
 ]
 
 tv_search_list = [
@@ -52,7 +51,7 @@ tv_search_list = [
     "percy jackson and the olympians s03e01",
     "prehistoric planet s04e01",
     "shogun s02e01",
-    "silo s03e07",
+    "silo s03e08",
     "skeleton crew s02e01",
     "spider-noir s02e01",
     "star city s01e09",
