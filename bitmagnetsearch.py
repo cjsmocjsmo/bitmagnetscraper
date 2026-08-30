@@ -7,12 +7,14 @@ from bs4 import BeautifulSoup
 try:
     from selenium import webdriver
     from selenium.webdriver.chrome.options import Options
+    from selenium.webdriver.chrome.service import Service
     from selenium.webdriver.support.ui import WebDriverWait
     from selenium.webdriver.common.by import By
     from selenium.common.exceptions import TimeoutException
 except ImportError:
     webdriver = None
     Options = None
+    Service = None
     WebDriverWait = None
     By = None
     TimeoutException = None
@@ -23,7 +25,6 @@ movie_search_list = [
     "godzilla minus zero",
     "heart of the beast",
     "jumanji open world (2026)",
-    "the dog stars (2026)",
     "top gun 3 (2026)",
     "matchbox (2026)",
     "coyote vs acme (2026)",
@@ -51,14 +52,14 @@ tv_search_list = [
     "percy jackson and the olympians s03e01",
     "prehistoric planet s04e01",
     "shogun s02e01",
-    "silo s03e09",
+    "silo s03e10",
     "skeleton crew s02e01",
     "spider-noir s02e01",
-    "star city s01e09",
+    "star city s02e01",
     "star wars maul shadow lord s02e01",
     "star wars visions s04e01",
     "starfleet academy s02e01",
-    "strange new worlds s04e06",
+    "strange new worlds s04e07",
     "the last of us s03e01",
     "wednesday s03e01",
     "wonderman s02e01",
@@ -72,7 +73,11 @@ def init_driver():
     chrome_options = Options()
     chrome_options.add_argument("--headless")
     chrome_options.add_argument("--no-sandbox")
-    driver = webdriver.Chrome(options=chrome_options)
+    chrome_options.binary_location = "/usr/bin/chromium"
+    driver = webdriver.Chrome(
+        service=Service("/usr/bin/chromedriver"),
+        options=chrome_options,
+    )
     return driver
 
 def normalize_title(title):
