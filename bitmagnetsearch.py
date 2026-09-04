@@ -29,7 +29,6 @@ movie_search_list = [
     "matchbox (2026)",
     "coyote vs acme (2026)",
     "the odyssey (2026)",
-    "lego mandalorian (2026)",
 ]
 
 tv_search_list = [
