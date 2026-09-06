@@ -28,6 +28,7 @@ movie_search_list = [
     "top gun 3 (2026)",
     "matchbox (2026)",
     "coyote vs acme (2026)",
+    "indiana jones and the myth of the jade serpent"
 ]
 
 tv_search_list = [
