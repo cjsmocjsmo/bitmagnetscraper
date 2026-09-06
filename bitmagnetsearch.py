@@ -28,7 +28,6 @@ movie_search_list = [
     "top gun 3 (2026)",
     "matchbox (2026)",
     "coyote vs acme (2026)",
-    "the odyssey (2026)",
 ]
 
 tv_search_list = [
@@ -53,14 +52,14 @@ tv_search_list = [
     "percy jackson and the olympians s03e01",
     "prehistoric planet s04e01",
     "shogun s02e01",
-    "silo s03e10",
+    "silo s03e11",
     "skeleton crew s02e01",
     "spider-noir s02e01",
     "star city s02e01",
     "star wars maul shadow lord s02e01",
     "star wars visions s04e01",
     "starfleet academy s02e01",
-    "strange new worlds s04e07",
+    "strange new worlds s04e08",
     "the last of us s03e01",
     "wednesday s03e01",
     "wonderman s02e01",
