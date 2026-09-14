@@ -29,6 +29,7 @@ movie_search_list = [
     "matchbox (2026)",
     "coyote vs acme (2026)",
     "musk horrible human (2026)",
+    "practical magic 2 (2026)",
 ]
 
 tv_search_list = [
