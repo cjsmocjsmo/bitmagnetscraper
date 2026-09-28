@@ -31,6 +31,7 @@ movie_search_list = [
     "musk horrible human (2026)",
     "wild horse nine (2026)",
     "wildwood (2026)",
+    "runner (2026)",
 ]
 
 tv_search_list = [
