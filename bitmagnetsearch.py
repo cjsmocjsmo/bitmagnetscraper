@@ -27,10 +27,11 @@ movie_search_list = [
     "jumanji open world (2026)",
     "top gun 3 (2026)",
     "matchbox (2026)",
-    "coyote vs acme (2026)",
     "musk horrible human (2026)",
     "wild horse nine (2026)",
     "wildwood (2026)",
+    "digger (2026)",
+    "naza (2026)",
 ]
 
 tv_search_list = [
@@ -43,7 +44,7 @@ tv_search_list = [
     "house of the dragon s04e01",
     "ironheart s02e01",
     "mandalorian s04e01",
-    "mobland s02e03",
+    "mobland s02e05",
     "monarch legacy of monsters s03e01",
     "ncis origins s03e01",
     "ncis s24e01",
