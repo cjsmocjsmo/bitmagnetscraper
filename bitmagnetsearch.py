@@ -26,7 +26,6 @@ movie_search_list = [
     "heart of the beast",
     "jumanji open world (2026)",
     "top gun 3 (2026)",
-    "matchbox (2026)",
     "musk horrible human (2026)",
     "wild horse nine (2026)",
     "wildwood (2026)",
