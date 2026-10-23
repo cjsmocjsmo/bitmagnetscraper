@@ -23,10 +23,10 @@ import requests
 movie_search_list = [
     "avengers doomsday",
     "godzilla minus zero",
-    "heart of the beast",
     "jumanji open world (2026)",
     "top gun 3 (2026)",
     "musk (2026)",
+    "heart of the beast (2026)",
     "wild horse nine (2026)",
     "wildwood (2026)",
 ]
