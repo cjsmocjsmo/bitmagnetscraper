@@ -26,10 +26,9 @@ movie_search_list = [
     "heart of the beast",
     "jumanji open world (2026)",
     "top gun 3 (2026)",
-    "musk horrible human (2026)",
+    "musk (2026)",
     "wild horse nine (2026)",
     "wildwood (2026)",
-    "digger (2026)",
     "naza (2026)",
 ]
 
@@ -45,8 +44,8 @@ tv_search_list = [
     "mandalorian s04e01",
     "mobland s02e05",
     "monarch legacy of monsters s03e01",
-    "ncis origins s03e02",
-    "ncis s24e02",
+    "ncis origins s03e03",
+    "ncis s24e03",
     "ncis sydney s04e01",
     "ncis new york s01e02",
     "obi-wan kenobi s02e01",
