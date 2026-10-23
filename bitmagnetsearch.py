@@ -29,7 +29,6 @@ movie_search_list = [
     "musk (2026)",
     "wild horse nine (2026)",
     "wildwood (2026)",
-    "naza (2026)",
 ]
 
 tv_search_list = [
