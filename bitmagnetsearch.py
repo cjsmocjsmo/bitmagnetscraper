@@ -25,7 +25,6 @@ movie_search_list = [
     "godzilla minus zero",
     "jumanji open world (2026)",
     "top gun 3 (2026)",
-    "musk (2026)",
     "wild horse nine (2026)",
     "wildwood (2026)",
 ]
@@ -62,6 +61,7 @@ tv_search_list = [
     "wednesday s03e01",
     "wonderman s02e01",
     "little house on the prairie (2026) s02e01",
+    "visionquest s01e01",
 ]
 
 total_tv = []
