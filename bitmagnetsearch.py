@@ -39,12 +39,12 @@ tv_search_list = [
     "house of the dragon s04e01",
     "ironheart s02e01",
     "mandalorian s04e01",
-    "mobland s02e09",
+    "mobland s02e10",
     "monarch legacy of monsters s03e01",
-    "ncis origins s03e05",
-    "ncis s24e05",
+    "ncis origins s03e06",
+    "ncis s24e06",
     "ncis sydney s04e01",
-    "ncis new york s01e05",
+    "ncis new york s01e06",
     "obi-wan kenobi s02e01",
     "orville s04e01",
     "percy jackson and the olympians s03e01",
@@ -61,7 +61,8 @@ tv_search_list = [
     "wednesday s03e01",
     "wonderman s02e01",
     "little house on the prairie (2026) s02e01",
-    "visionquest s01e01",
+    "visionquest s01e10",
+    "the lord of the rings the rings of power s03e05",
 ]
 
 total_tv = []
