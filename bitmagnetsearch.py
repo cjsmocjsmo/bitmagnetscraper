@@ -63,6 +63,7 @@ tv_search_list = [
     "little house on the prairie (2026) s02e01",
     "visionquest s01e10",
     "the lord of the rings the rings of power s03e05",
+    "lanterns s01e01",
 ]
 
 total_tv = []
