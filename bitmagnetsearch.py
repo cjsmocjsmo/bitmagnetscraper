@@ -27,6 +27,7 @@ movie_search_list = [
     "top gun 3 (2026)",
     "wild horse nine (2026)",
     "wildwood (2026)",
+    "ebenezer (2026)",
 ]
 
 tv_search_list = [
